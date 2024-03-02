@@ -1,4 +1,5 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("utilities.js");
   eleventyConfig.addPassthroughCopy("index.html");
+  eleventyConfig.addPassthroughCopy("styles.css");
 };

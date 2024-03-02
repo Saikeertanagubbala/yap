@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's in a Name?</title>
+    <title>Yet Another Project</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="utilities.js"></script>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div x-data="rando">
         <h1 x-text="name"></h1>
-        <button @click="name = name">Generate a name</button>
+        <button @click="name = name"> Generate a name</button>
     </div>
     <script src="utilities.js"></script>
 </body>
