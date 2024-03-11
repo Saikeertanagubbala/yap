@@ -1,4 +1,2 @@
+_site
 node_modules
-package.json
--site
-package-lock.json
