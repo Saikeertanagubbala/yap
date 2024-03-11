@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yet Another Project</title>
+    <script defer src="https://cdn.jsdelivr.net/gh/hankhank10/alpine-fetch@main/alpine-fetch.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="utilities.js"></script>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <div x-data="rando">
-        <h1 x-text="name"></h1>
-        <button @click="name = name"> Generate a name</button>
+    <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem = 'thumbanail')}">
+        <img alt="thumbnail" x-bind:src="thumbImage" />
     </div>
     <script src="utilities.js"></script>
 </body>
